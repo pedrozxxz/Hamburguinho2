@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neymar: O Caos Perfeito</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+  <div class="header-container">
+    <img src="0b53f2136325629.61f7e686e1236.png" alt="Logo Neymar" class="logo" />
+    <button id="menu-btn">&#9776;</button>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="#descricao">Sobre</a></li>
+        <li><a href="#video">Trailer</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="contato.html">Contato</a></li> <!-- Redirecionamento para a página de contato -->
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main>
+    <section class="container card" id="descricao">
+      <div class="descricao">
+        <img src="1674125087520.jfif" alt="Neymar Caos Perfeito" class="produto-img" />
+        <div class="texto-descricao">
+          <h1>Neymar: O Caos Perfeito</h1>
+          <p>Um olhar exclusivo sobre a carreira e a vida fora dos campos de um dos jogadores mais famosos e controversos do mundo. Acompanhe os bastidores, os altos e baixos, e descubra o verdadeiro Neymar por trás da fama.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container card" id="video">
+  <h2>Assista ao Trailer</h2>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HSC6htNW9co?si=1ER8RjnQzDHj_RRi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</section>
+
+    <section class="container card" id="planos">
+      <h2>Comparativo de Jogadores</h2>
+      <table>
+        <tr>
+          <th>Jogador</th>
+          <th>Posição</th>
+          <th>Características</th>
+        </tr>
+        <tr>
+          <td><strong>Neymar</strong></td>
+          <td>Habilidade extrema, dribles imprevisíveis, liderança</td>
+          <td>Atacante</td>
+        </tr>
+        <tr>
+          <td>Messi</td>
+          <td>Habilidade de drible, visão de jogo excepcional</td>
+          <td>Atacante</td>
+        </tr>
+        <tr>
+          <td>Ronaldo</td>
+          <td>Força física, precisão nos chutes, poder de finalização</td>
+          <td>Atacante</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Documentário Neymar | Todos os direitos reservados</p>
+    <div class="social">
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+      <a href="#">YouTube</a>
+    </div>
+  </footer>
+
+  <script>
+  const menuBtn = document.getElementById('menu-btn');
+  const navMenu = document.getElementById('nav-menu');
+  const navLinks = document.querySelectorAll('#nav-menu a');
+
+  // Toggle do menu
+  menuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    document.body.classList.toggle('menu-open');
+  });
+
+  // Fechar o menu ao clicar em qualquer link
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+      document.body.classList.remove('menu-open');
+    });
+  });
+</script>
+  
+</body>
+</html>
